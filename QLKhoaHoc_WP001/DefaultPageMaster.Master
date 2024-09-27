@@ -44,9 +44,13 @@
                     <asp:TreeView ID="TreeView1" runat="server" DataSourceID="SiteMapDataSource1">
                     </asp:TreeView>
                     <hr />
-                    <uc1:ucListCategory runat="server" id="ucListCategory" />
+                    <ul>
+                        <li>
+                            <uc1:ucListCategory runat="server" ID="ucListCategory" />
+                        </li>
+                    </ul>
                 </div>
-               
+
 
                 <div id="content">
                     <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
