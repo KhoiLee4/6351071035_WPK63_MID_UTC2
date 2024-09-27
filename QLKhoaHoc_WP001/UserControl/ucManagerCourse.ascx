@@ -3,13 +3,17 @@
     <tr>
         <td>Course name:</td>
         <td>
-            <asp:TextBox ID="TextBoxName" runat="server"></asp:TextBox></td>
+            <asp:TextBox ID="TextBoxName" runat="server"></asp:TextBox>
+            <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="TextBoxName" ErrorMessage="Tên khóa học chưa được nhập"></asp:RequiredFieldValidator>
+        </td>
         <td>&nbsp;</td>
     </tr>
     <tr>
         <td>Duration</td>
         <td>
-            <asp:TextBox ID="TextBoxDuration" runat="server"></asp:TextBox></td>
+            <asp:TextBox ID="TextBoxDuration" runat="server"></asp:TextBox>
+            <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="TextBoxDuration" ErrorMessage="Thời gian khóa học chưa được nhập"></asp:RequiredFieldValidator>
+        </td>
         <td>&nbsp;</td>
     </tr>
     <tr>
@@ -21,13 +25,17 @@
     <tr>
         <td>Description</td>
         <td>
-            <asp:TextBox ID="TextBoxDescription" TextMode="MultiLine" runat="server"></asp:TextBox></td>
+            <asp:TextBox ID="TextBoxDescription" TextMode="MultiLine" runat="server"></asp:TextBox>
+            <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ControlToValidate="TextBoxDescription" ErrorMessage="Mô tả học chưa được nhập"></asp:RequiredFieldValidator>
+        </td>
         <td>&nbsp;</td>
     </tr>
     <tr>
         <td>Picture</td>
         <td>
-            <asp:FileUpload ID="FileUploadPicture" runat="server" /></td>
+            <asp:FileUpload ID="FileUploadPicture" runat="server" />
+            <asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" ControlToValidate="FileUploadPicture" ErrorMessage="Hình ảnh học chưa được nhập"></asp:RequiredFieldValidator>
+        </td>
         <td>&nbsp;</td>
     </tr>
 
